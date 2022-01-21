@@ -1,0 +1,3 @@
+# wordle-solver
+
+wordle solver

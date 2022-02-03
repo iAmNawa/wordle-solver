@@ -1,7 +1,7 @@
 let correct_word = 'spite'
 let start_word ='scram'
 let found = false
-const data = require("./words.json")
+const wordList = require("./wordsList")
 
 let correctArr = [0,0,0,0,0]
 
@@ -17,9 +17,9 @@ let possibleWords = []
 
 for (var i = 0; i < correctArr.length; i++) {
   if (correctArr[i] == true) {
-    for (var j = 0; j < data.length; j++) {
-      if (data[j][i] === correct_word[i]) {
-        possibleWords.push(data[j])
+    for (var j = 0; j < wordList.length; j++) {
+      if (wordList[j][i] === correct_word[i]) {
+        possibleWords.push(wordList[j])
       }
     }
   }
